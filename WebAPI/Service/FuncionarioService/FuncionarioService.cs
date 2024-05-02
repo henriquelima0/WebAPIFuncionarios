@@ -52,7 +52,7 @@ namespace WebAPI.Service.FuncionarioService
                     serviceResponse.dados = null;
                     serviceResponse.Mensagem = "Funcionário não encontrado!";
                     serviceResponse.Sucesso = false;
-                    return;
+                    return serviceResponse;
                 }
 
                 if (!funcionario.Ativo)
